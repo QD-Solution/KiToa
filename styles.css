@@ -196,6 +196,14 @@ textarea.input { min-height: 90px; resize: vertical; }
   font-size: 13px;
 }
 
+/* — real product screenshot — */
+.shot {
+  width: 100%; height: auto;
+  border: 1px solid var(--color-divider);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+}
+
 /* — rounded frame: everything softens, small controls go pill — */
 .card { border-radius: calc(var(--radius-lg) * 1.15); }
 .btn, .tag, .input { border-radius: 999px; }
