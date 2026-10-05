@@ -4,179 +4,194 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>KiToa — Phần mềm kiểm toán offline</title>
-<meta name="description" content="KiToa là phần mềm kiểm toán chạy offline, tuân thủ quy trình VACPA. Dữ liệu khách hàng luôn ở lại trên máy của bạn.">
+<meta name="description" content="KiToa là phần mềm kiểm toán báo cáo tài chính chạy offline trên Windows. Soát xét ba cấp theo quy trình VACPA, dữ liệu khách hàng ở lại trên máy của bạn.">
 <link rel="icon" href="assets/kitoa-mark.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700&family=Baloo+2:wght@600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500&display=swap">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<header class="site-header">
-  <nav class="nav site-nav">
-    <div class="brand">
-      <img src="assets/kitoa-mark.png" alt="KiToa" width="32" height="32" style="flex:none;border-radius:var(--radius-md);display:block">
-      <span class="brand-mark brand-mark--header">
-        <span class="k-light">K</span>
-        <span class="i-stem" style="color:#f8f9fa"><span class="i-dot"></span></span>
-        <span class="toa">Toa</span>
-      </span>
-    </div>
-    <a href="#features">Tính năng</a>
-    <a href="#process">Quy trình</a>
-    <a href="#download">Tải xuống</a>
-    <a href="#contact">Liên hệ</a>
-    <a href="#download" class="btn btn-primary" style="white-space:nowrap;flex-shrink:0">Tải xuống</a>
+<header class="top">
+  <nav class="top-inner" aria-label="Điều hướng chính">
+    <a class="brand" href="#top" aria-label="KiToa, về đầu trang">
+      <img src="assets/kitoa-mark.png" alt="" width="36" height="36">
+      <span class="wordmark" aria-hidden="true"><span class="wm-ki">K<span class="wm-i">ı</span></span><span class="wm-toa">Toa</span></span>
+    </a>
+    <a class="top-link" href="#features">Tính năng</a>
+    <a class="top-link" href="#screens">Giao diện</a>
+    <a class="top-link" href="#process">Quy trình</a>
+    <a class="top-link" href="#contact">Liên hệ</a>
+    <a class="btn btn-blue btn-sm" href="#download">Tải xuống</a>
   </nav>
 </header>
 
-<div class="page-shell">
+<main id="top">
 
-  <section id="hero" style="position:relative;overflow:hidden;padding:clamp(48px,9vw,120px) 0 clamp(40px,7vw,88px)">
-    <div aria-hidden="true" style="position:absolute;right:-100px;top:-90px;width:280px;height:280px;border-radius:50%;background:var(--color-accent-2-200);z-index:-1;pointer-events:none"></div>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:clamp(24px,4vw,64px);align-items:center">
-      <div>
-        <h1 style="font-size:clamp(36px,5.2vw,60px);line-height:1.1;margin:0;letter-spacing:-0.01em">
-          <span style="display:block">Bám sát chuẩn mực</span>
-          <span style="display:block">trên nhịp của bạn.</span>
-        </h1>
-        <p style="font-size:17px;line-height:1.65;max-width:52ch;margin:20px 0 0;color:color-mix(in srgb, var(--color-text) 82%, transparent)">KiToa là phần mềm kiểm toán chạy offline, tuân thủ quy trình VACPA và xây dựng quy trình riêng. Dữ liệu khách hàng luôn ở lại trên máy của bạn — không cần gửi lên bất kỳ đâu.</p>
-        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:28px">
-          <a href="#download" class="btn btn-primary" style="white-space:nowrap;flex-shrink:0">Tải xuống miễn phí</a>
-          <a href="#features" class="btn btn-ghost" style="white-space:nowrap;flex-shrink:0">Xem tính năng</a>
+  <!-- ───────────── Hero ───────────── -->
+  <section class="wrap hero-wrap">
+    <div class="hero">
+      <div class="hero-copy">
+        <h1>Kiểm toán đúng chuẩn VACPA, ngay trên máy của bạn.</h1>
+        <p class="lead">KiToa là phần mềm kiểm toán chạy offline trên Windows. Lập kế hoạch, thực hiện và soát xét ba cấp theo quy trình VACPA, còn dữ liệu khách hàng không bao giờ rời khỏi máy bạn.</p>
+        <div class="actions">
+          <a class="btn btn-white" href="#download">Tải xuống miễn phí</a>
+          <a class="btn btn-glass" href="#screens">Demo</a>
         </div>
       </div>
-      <figure>
-        <img class="shot" src="assets/screen-workspace.png" alt="Màn hình làm việc chính của KiToa: chương trình kiểm toán và trạng thái soát xét 3 cấp" width="2880" height="1700">
-      </figure>
-    </div>
-  </section>
 
-  <section id="features" style="padding:clamp(32px,5vw,56px) 0">
-    <span class="section-eyebrow" style="margin-bottom:24px">VÌ SAO CHỌN KiToa</span>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:clamp(28px,4vw,48px)">
-      <div>
-        <div style="display:flex;align-items:center;gap:10px">
-          <span aria-hidden="true" style="width:16px;height:16px;border-radius:50%;background:var(--color-accent);flex:none"></span>
-          <h3 style="font-size:21px;margin:0">Offline hoàn toàn</h3>
-        </div>
-        <p style="font-size:15.5px;line-height:1.65;margin:10px 0 0 26px;color:color-mix(in srgb, var(--color-text) 78%, transparent)">Toàn bộ hồ sơ và thủ tục kiểm toán được xử lý ngay trên máy của bạn. Không cần Internet, không cần đăng nhập cloud.</p>
-      </div>
-      <div>
-        <div style="display:flex;align-items:center;gap:10px">
-          <span aria-hidden="true" style="width:16px;height:16px;border-radius:50%;background:var(--color-accent);flex:none"></span>
-          <h3 style="font-size:21px;margin:0">Bảo mật &amp; riêng tư</h3>
-        </div>
-        <p style="font-size:15.5px;line-height:1.65;margin:10px 0 0 26px;color:color-mix(in srgb, var(--color-text) 78%, transparent)">Dữ liệu khách hàng không rời khỏi thiết bị. Không máy chủ trung gian, không rủi ro rò rỉ thông tin nhạy cảm.</p>
-      </div>
-      <div>
-        <div style="display:flex;align-items:center;gap:10px">
-          <span aria-hidden="true" style="width:16px;height:16px;border-radius:50%;background:var(--color-accent);flex:none"></span>
-          <h3 style="font-size:21px;margin:0">Chuẩn quy trình VACPA</h3>
-        </div>
-        <p style="font-size:15.5px;line-height:1.65;margin:10px 0 0 26px;color:color-mix(in srgb, var(--color-text) 78%, transparent)">Từng bước làm việc được xây dựng theo đúng hướng dẫn của VACPA, từ lập kế hoạch đến phát hành báo cáo kiểm toán.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="process" style="padding:clamp(40px,6vw,72px) 0">
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:clamp(28px,4vw,64px);align-items:center">
-      <div>
-        <span class="section-eyebrow" style="margin-bottom:14px">Quy trình</span>
-        <h2 style="font-size:clamp(26px,3vw,34px);margin:0 0 14px">Đi đúng từng bước VACPA</h2>
-        <p style="font-size:15.5px;line-height:1.65;max-width:48ch;margin:0 0 24px;color:color-mix(in srgb, var(--color-text) 78%, transparent)">KiToa dẫn đội ngũ của bạn qua đầy đủ các bước theo hướng dẫn VACPA, mỗi bước đều được lưu vết rõ ràng để soát xét lại bất cứ lúc nào.</p>
-        <div style="display:flex;flex-direction:column;gap:14px">
-          <div style="display:flex;align-items:center;gap:12px">
-            <span aria-hidden="true" style="display:grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--color-accent-100);color:var(--color-accent-700);font-family:var(--font-heading);font-size:13px;flex:none">1</span>
-            <span style="font-size:15px">Lập kế hoạch kiểm toán</span>
+      <div class="hero-art" aria-hidden="true">
+        <div class="doc-float">
+          <div class="doc-wrap">
+            <div class="doc">
+              <svg class="pct" viewBox="0 0 28 28"><circle cx="7" cy="7" r="4"/><circle cx="21" cy="21" r="4"/><path d="M22 4L6 24"/></svg>
+              <i class="ln ln-1"></i><i class="ln ln-2"></i>
+              <div class="doc-chip"><span class="wordmark"><span class="wm-ki">K<span class="wm-i">ı</span></span><span class="wm-toa">Toa</span></span></div>
+              <i class="ln ln-3"></i><i class="ln ln-4"></i>
+            </div>
           </div>
-          <div style="display:flex;align-items:center;gap:12px">
-            <span aria-hidden="true" style="display:grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--color-accent-100);color:var(--color-accent-700);font-family:var(--font-heading);font-size:13px;flex:none">2</span>
-            <span style="font-size:15px">Thực hiện thủ tục kiểm toán</span>
-          </div>
-          <div style="display:flex;align-items:center;gap:12px">
-            <span aria-hidden="true" style="display:grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--color-accent-100);color:var(--color-accent-700);font-family:var(--font-heading);font-size:13px;flex:none">3</span>
-            <span style="font-size:15px">Tổng hợp bằng chứng</span>
-          </div>
-          <div style="display:flex;align-items:center;gap:12px">
-            <span aria-hidden="true" style="display:grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--color-accent-100);color:var(--color-accent-700);font-family:var(--font-heading);font-size:13px;flex:none">4</span>
-            <span style="font-size:15px">Phát hành báo cáo</span>
-          </div>
+          <div class="badge"><svg class="badge-check" viewBox="0 0 24 24"><path d="M5 12.5l5 5.5L19.5 6.5"/></svg></div>
+        </div>
+        <span class="pill pill-1"><i></i>Chạy offline</span>
+        <span class="pill pill-2"><i></i>Chuẩn VACPA</span>
+        <span class="pill pill-3"><i></i>Dữ liệu được bảo mật</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────── Features ───────────── -->
+  <section id="features" class="wrap features">
+    <h2>Làm đúng nghề, không thêm thủ tục.</h2>
+    <div class="bento">
+      <article class="tile tile-a">
+        <span class="chip"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 8.5a15 15 0 0 1 20 0M5.5 12.5a10 10 0 0 1 13 0M9 16.2a5 5 0 0 1 6 0"/><circle cx="12" cy="19.5" r="1" /><path d="M3 3l18 18"/></svg></span>
+        <h3>Offline hoàn toàn</h3>
+        <p>Hồ sơ và thủ tục kiểm toán được xử lý ngay trên máy của bạn. Không cần Internet, không cần đăng nhập cloud.</p>
+      </article>
+      <article class="tile tile-b">
+        <span class="chip"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7.5 3v5.5c0 4.6-3.1 8-7.5 9.5-4.4-1.5-7.5-4.9-7.5-9.5V6L12 3z"/><path d="M8.7 12l2.4 2.4 4.3-4.6"/></svg></span>
+        <h3>Dữ liệu khách hàng ở lại trên máy</h3>
+        <p>Không máy chủ trung gian, không gửi tệp đi đâu cả. Số liệu nhạy cảm của khách hàng chỉ nằm trong ổ đĩa của bạn.</p>
+      </article>
+      <article class="tile tile-c">
+        <span class="chip"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h8l5 5v13H6z"/><path d="M14 3v5h5M9 13h7M9 17h5"/></svg></span>
+        <h3>Bộ hồ sơ tạo sẵn theo VACPA</h3>
+        <p>Nhập tên khách hàng, ngành nghề, ngày kết thúc năm tài chính và chuẩn mực áp dụng. KiToa dựng sẵn bộ hồ sơ 9 phần (0, A đến H) từ biểu mẫu VACPA.</p>
+      </article>
+      <article class="tile tile-e">
+        <span class="chip"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1-4L16.5 4.5a2 2 0 0 1 3 3L8 19l-4 1zM14 7l3 3"/></svg></span>
+        <h3>Sửa biểu mẫu bằng Word</h3>
+        <p>Bấm Chỉnh sửa để mở biểu mẫu bằng Office trên máy. Lưu trong Word, bản xem trước trong KiToa tự cập nhật. Cần mẫu riêng? Tải bản tùy chỉnh lên.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ───────────── Screens ───────────── -->
+  <section id="screens" class="screens">
+    <div class="wrap">
+      <h2>Phần mềm thật, màn hình thật.</h2>
+      <div class="viewer">
+        <div class="tabs" role="tablist" aria-label="Các màn hình của KiToa" aria-orientation="vertical">
+          <button class="tab" role="tab" id="tab-home" aria-controls="shot-home" aria-selected="true" type="button">
+            <span class="tab-name">Hồ sơ kiểm toán</span>
+            <span class="tab-desc">Tất cả cuộc kiểm toán ở một nơi. Tìm theo tên khách hàng, sắp xếp theo ngày tạo.</span>
+          </button>
+          <button class="tab" role="tab" id="tab-create" aria-controls="shot-create" aria-selected="false" tabindex="-1" type="button">
+            <span class="tab-name">Tạo cuộc kiểm toán</span>
+            <span class="tab-desc">Điền năm thông tin, bộ hồ sơ 9 phần được khởi tạo tự động. Hạn nộp báo cáo tính sẵn cho bạn.</span>
+          </button>
+          <button class="tab" role="tab" id="tab-program" aria-controls="shot-program" aria-selected="false" tabindex="-1" type="button">
+            <span class="tab-name">Chương trình kiểm toán</span>
+            <span class="tab-desc">Cây hồ sơ theo giai đoạn ở bên trái, trạng thái soát xét Senior, Manager, Partner ở bên phải.</span>
+          </button>
+          <button class="tab" role="tab" id="tab-form" aria-controls="shot-form" aria-selected="false" tabindex="-1" type="button">
+            <span class="tab-name">Biểu mẫu</span>
+            <span class="tab-desc">Xem trước biểu mẫu VACPA, theo dõi trạng thái, đính kèm tệp và mở Word để chỉnh sửa.</span>
+          </button>
+        </div>
+
+        <div class="stage">
+          <img id="shot-home" class="shot is-active" role="tabpanel" aria-labelledby="tab-home" src="assets/screen-home.png" alt="Màn hình Hồ sơ kiểm toán với ô tạo cuộc kiểm toán mới" width="2880" height="1700">
+          <img id="shot-create" class="shot" role="tabpanel" aria-labelledby="tab-create" src="assets/screen-create.png" alt="Hộp thoại tạo cuộc kiểm toán mới: tên khách hàng, ngành nghề, năm tài chính, chuẩn mực áp dụng" width="2880" height="1704" loading="lazy">
+          <img id="shot-program" class="shot" role="tabpanel" aria-labelledby="tab-program" src="assets/screen-workspace.png" alt="Chương trình kiểm toán với trạng thái soát xét ba cấp" width="2880" height="1700" loading="lazy">
+          <img id="shot-form" class="shot" role="tabpanel" aria-labelledby="tab-form" src="assets/screen-form.png" alt="Biểu mẫu A110 theo VACPA với bảng trạng thái và nút Chỉnh sửa" width="2880" height="1700" loading="lazy">
         </div>
       </div>
-      <figure>
-        <img class="shot" src="assets/screen-form.png" alt="Biểu mẫu kiểm toán A110 theo VACPA với trạng thái soát xét và chỉnh sửa bằng Word" width="2880" height="1700" loading="lazy">
-      </figure>
     </div>
   </section>
 
-  <section id="start" style="padding:clamp(24px,4vw,48px) 0 clamp(40px,6vw,72px)">
-    <span class="section-eyebrow" style="margin-bottom:14px">Bắt đầu nhanh</span>
-    <h2 style="font-size:clamp(26px,3vw,34px);margin:0 0 24px">Từ hồ sơ trống đến bộ hồ sơ hoàn chỉnh</h2>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:clamp(20px,3vw,32px)">
-      <figure>
-        <img class="shot" src="assets/screen-home.png" alt="Màn hình Hồ sơ kiểm toán với danh sách cuộc kiểm toán đang thực hiện" width="2880" height="1700" loading="lazy">
-        <figcaption style="font-size:13px;margin-top:10px">Quản lý mọi cuộc kiểm toán tại một nơi.</figcaption>
-      </figure>
-      <figure>
-        <img class="shot" src="assets/screen-create.png" alt="Hộp thoại tạo cuộc kiểm toán mới: tên khách hàng, ngành nghề, chuẩn mực áp dụng" width="2880" height="1704" loading="lazy">
-        <figcaption style="font-size:13px;margin-top:10px">Tạo cuộc kiểm toán mới — bộ hồ sơ 9 phần (0, A–H) được khởi tạo tự động.</figcaption>
-      </figure>
-    </div>
-  </section>
+  <!-- ───────────── Process ───────────── -->
+  <section id="process" class="wrap process">
+    <h2>Đi hết một cuộc kiểm toán trong ba chặng.</h2>
+    <div class="stepper">
+      <div class="steps" role="tablist" aria-label="Ba chặng của cuộc kiểm toán">
+        <button class="step" role="tab" id="step-1" aria-controls="panel-1" aria-selected="true" type="button"><span class="step-num">1</span>Lập kế hoạch</button>
+        <button class="step" role="tab" id="step-2" aria-controls="panel-2" aria-selected="false" tabindex="-1" type="button"><span class="step-num">2</span>Thực hiện</button>
+        <button class="step" role="tab" id="step-3" aria-controls="panel-3" aria-selected="false" tabindex="-1" type="button"><span class="step-num">3</span>Báo cáo</button>
+      </div>
 
-  <section id="download" style="padding:0 0 clamp(40px,6vw,72px)">
-    <div style="background:var(--color-accent-2-200);border-radius:calc(2 * var(--radius-lg));padding:clamp(32px,5vw,56px) clamp(28px,4vw,56px);display:flex;flex-direction:column;gap:8px;align-items:flex-start">
-      <h3 style="font-size:clamp(24px,2.6vw,30px);margin:0">Sẵn sàng dùng ngay hôm nay</h3>
-      <p style="font-size:15.5px;line-height:1.65;max-width:52ch;margin:0 0 8px;color:color-mix(in srgb, var(--color-text) 78%, transparent)">Tải KiToa về máy và bắt đầu buổi làm việc kiểm toán đầu tiên trong vài phút. Không cần cài đặt phức tạp, không cần tài khoản cloud.</p>
-      <a href="#" class="btn btn-primary" style="white-space:nowrap;flex-shrink:0">Tải xuống miễn phí</a>
-      <span style="font-size:13px;color:color-mix(in srgb, var(--color-text) 60%, transparent);margin-top:4px">Windows 10/11 · Không cần kết nối Internet để sử dụng</span>
-    </div>
-  </section>
-
-  <section id="contact" style="padding:0 0 clamp(48px,7vw,88px)">
-    <span class="section-eyebrow" style="margin-bottom:14px">Liên hệ</span>
-    <h2 style="font-size:clamp(26px,3vw,34px);margin:0 0 10px">Cần hỗ trợ hoặc muốn hợp tác?</h2>
-    <p style="font-size:15.5px;line-height:1.65;max-width:52ch;margin:0 0 28px;color:color-mix(in srgb, var(--color-text) 78%, transparent)">Để lại lời nhắn, đội ngũ KiToa sẽ phản hồi trong vòng 1–2 ngày làm việc.</p>
-
-    <form id="contact-form" style="display:flex;flex-direction:column;gap:16px;max-width:560px">
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px">
-        <div class="field">
-          <label for="cf-name">Họ và tên</label>
-          <input class="input" id="cf-name" name="name" type="text" placeholder="Nguyễn Văn A" required>
+      <div class="panels">
+        <div class="panel" id="panel-1" role="tabpanel" aria-labelledby="step-1">
+          <h3>Phần A, Kế hoạch kiểm toán</h3>
+          <p>Giai đoạn 1 gồm chín nhóm hồ sơ từ A100 đến A900. Bạn bắt đầu bằng A100, xem xét chấp nhận khách hàng và hợp đồng kiểm toán, rồi đi tiếp xuống các nhóm sau.</p>
+          <p class="panel-note">Mỗi nhóm mở ra thành các biểu mẫu như A110, A111, A120, mỗi mục có trạng thái soát xét cho ba cấp.</p>
         </div>
-        <div class="field">
-          <label for="cf-email">Email</label>
-          <input class="input" id="cf-email" name="email" type="email" placeholder="ban@congty.com" required>
+        <div class="panel" id="panel-2" role="tabpanel" aria-labelledby="step-2" hidden>
+          <h3>Phần C đến H, thực hiện thủ tục</h3>
+          <p>Giai đoạn 2 và 3 gom các thủ tục theo đối tượng kiểm toán: kiểm tra tài sản, nợ phải trả, vốn chủ sở hữu, các khoản mục khác và những thủ tục còn lại.</p>
+          <p class="panel-note">Đính kèm bằng chứng vào từng biểu mẫu, mở Word để điền, lưu xong là bản xem trước cập nhật.</p>
+        </div>
+        <div class="panel" id="panel-3" role="tabpanel" aria-labelledby="step-3" hidden>
+          <h3>Phần B, Tổng hợp và kết luận</h3>
+          <p>Giai đoạn 4 dành cho phần tổng hợp, kết luận. Đến đây, bảng soát xét cho bạn thấy ngay mục nào chưa qua cấp Manager hay Partner.</p>
+          <p class="panel-note">Trạng thái soát xét đi theo từng mục hồ sơ, nên không ai phải đoán hồ sơ đã được soát xét đến đâu.</p>
         </div>
       </div>
-      <div class="field">
-        <label for="cf-message">Nội dung</label>
-        <textarea class="input" id="cf-message" name="message" rows="4" placeholder="Cho chúng tôi biết bạn cần hỗ trợ gì..." required style="border-radius:var(--radius-md);padding-top:10px;resize:vertical"></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary" style="align-self:flex-start;white-space:nowrap;flex-shrink:0">Gửi lời nhắn</button>
-    </form>
-
-    <div id="contact-thanks" class="card" style="max-width:560px;margin-top:16px;background:var(--color-accent-100)" hidden>
-      <p class="card-title" style="margin:0">Cảm ơn bạn!</p>
-      <p class="card-body">Chúng tôi đã nhận được lời nhắn và sẽ phản hồi trong vòng 1–2 ngày làm việc.</p>
     </div>
   </section>
 
-</div>
+  <!-- ───────────── Download ───────────── -->
+  <section id="download" class="wrap download-wrap">
+    <div class="download">
+      <div class="download-inner">
+        <div>
+          <h2>Mở KiToa cho cuộc kiểm toán tiếp theo.</h2>
+          <p class="lead">Tải về, cài lên máy Windows và tạo hồ sơ đầu tiên trong vài phút. Không cần tài khoản cloud.</p>
+        </div>
+        <div class="download-box">
+          <a id="download-btn" class="btn btn-white btn-big" href="https://github.com/QD-Solution/KiToa/releases/latest">Tải xuống miễn phí</a>
+          <p id="download-meta">Windows 10/11, không cần kết nối Internet để sử dụng</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<footer class="site-footer">
-  <div class="site-footer-row">
-    <span style="display:flex;align-items:center;gap:8px">
-      <img src="assets/kitoa-mark.png" alt="KiToa" width="26" height="26" style="flex:none;border-radius:var(--radius-sm);display:block">
-      <span class="brand-mark brand-mark--footer">
-        <span class="k-dark">K</span>
-        <span class="i-stem" style="color:var(--color-text)"><span class="i-dot"></span></span>
-        <span class="toa">Toa</span>
-      </span>
-    </span>
-    <span style="font-size:13px;color:color-mix(in srgb, var(--color-text) 60%, transparent)">© 2026 Phát triển bởi QD Solutions.</span>
+  <!-- ───────────── Contact ───────────── -->
+  <section id="contact" class="wrap contact">
+    <div class="contact-intro">
+      <h2>Cần hỗ trợ hoặc muốn hợp tác?</h2>
+      <p>Gửi email cho đội ngũ KiToa, chúng tôi sẽ trả lời trong 1 đến 2 ngày làm việc.</p>
+    </div>
+
+    <div class="mail-card">
+      <span class="mail-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M4 7.5l8 6 8-6"/></svg></span>
+      <p class="mail-label">Email hỗ trợ</p>
+      <a class="mail-address" href="mailto:support.qd.solutions@gmail.com?subject=Li%C3%AAn%20h%E1%BB%87%20v%E1%BB%81%20KiToa">support.qd.solutions@gmail.com</a>
+      <div class="mail-actions">
+        <a class="btn btn-blue" href="mailto:support.qd.solutions@gmail.com?subject=Li%C3%AAn%20h%E1%BB%87%20v%E1%BB%81%20KiToa">Gửi email</a>
+        <button class="btn btn-soft" id="copy-mail" type="button">Sao chép địa chỉ</button>
+      </div>
+      <p id="copy-note" class="copy-note" role="status"></p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-inner">
+    <span class="brand brand-foot"><img src="assets/kitoa-mark.png" alt="" width="28" height="28"><span class="wordmark" aria-hidden="true"><span class="wm-ki">K<span class="wm-i">ı</span></span><span class="wm-toa">Toa</span></span><span class="sr-only">KiToa</span></span>
+    <span class="foot-note">© 2026 Phát triển bởi Lazycat & Nguyễn Quang Dũng.</span>
   </div>
 </footer>
 
